@@ -1,0 +1,50 @@
+{
+  "name": "chat_app",
+  "version": "1.0.0",
+  "description": "A simple chat application built with Socket.io and express",
+  "main": "server.js",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib"
+  },
+  "dependencies": {
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "cross-env": "^7.0.3",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "glob": "^7.1.7",
+    "helmet": "^4.6.0",
+    "hpp": "^0.2.3",
+    "joi-to-swagger": "^6.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "keycloak-connect": "^15.0.2",
+    "mongoose": "^6.0.9",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.0",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-jwt": "^4.0.0",
+    "pg": "^8.7.1",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5",
+    "winston": "^3.3.3",
+    "winston-daily-rotate-file": "^4.5.5"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && cross-env NODE_ENV=production node dist/server.js",
+    "dev": "cross-env NODE_ENV=development nodemon --inspect"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prashantch265/chat_app.git"
+  },
+  "author": "prashant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prashantch265/chat_app/issues"
+  },
+  "homepage": "https://github.com/Prashantch265/chat_app#readme"
+}

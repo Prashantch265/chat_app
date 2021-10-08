@@ -1,0 +1,11 @@
+2021-10-04 14:15:06 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/privilege.model.js
+2021-10-04 14:15:06 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/role.model.js
+2021-10-04 14:15:06 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/rolePrivilege.model.js
+2021-10-04 14:15:06 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/user.model.js
+2021-10-04 14:15:06 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/userRole.model.js
+2021-10-04 14:15:06 [32minfo[39m: initalizing keycloak
+2021-10-04 14:15:06 [32minfo[39m: =================================
+2021-10-04 14:15:06 [32minfo[39m: ======= ENV: development =======
+2021-10-04 14:15:06 [32minfo[39m: 🚀 App listening on the port 3000
+2021-10-04 14:15:06 [32minfo[39m: =================================
+2021-10-04 14:15:31 [32minfo[39m: DB connected

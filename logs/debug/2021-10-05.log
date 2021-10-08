@@ -1,0 +1,45 @@
+2021-10-05 12:22:54 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/privilege.model.js
+2021-10-05 12:22:54 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/role.model.js
+2021-10-05 12:22:54 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/rolePrivilege.model.js
+2021-10-05 12:22:54 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/user.model.js
+2021-10-05 12:22:54 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/userRole.model.js
+2021-10-05 12:23:44 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/privilege.model.js
+2021-10-05 12:23:44 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/role.model.js
+2021-10-05 12:23:44 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/rolePrivilege.model.js
+2021-10-05 12:23:44 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/user.model.js
+2021-10-05 12:23:44 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/userRole.model.js
+2021-10-05 12:23:48 [31merror[39m: MongoParseError: options usecreateindex, usefindandmodify are not supported
+    at Object.parseOptions (/home/prashant/Documents/node.js/node-framework/node_modules/mongodb/lib/connection_string.js:291:15)
+    at new MongoClient (/home/prashant/Documents/node.js/node-framework/node_modules/mongodb/lib/mongo_client.js:62:46)
+    at /home/prashant/Documents/node.js/node-framework/node_modules/mongoose/lib/connection.js:779:16
+    at new Promise (<anonymous>)
+    at NativeConnection.Connection.openUri (/home/prashant/Documents/node.js/node-framework/node_modules/mongoose/lib/connection.js:776:19)
+    at /home/prashant/Documents/node.js/node-framework/node_modules/mongoose/lib/index.js:329:10
+    at /home/prashant/Documents/node.js/node-framework/node_modules/mongoose/lib/helpers/promiseOrCallback.js:32:5
+    at new Promise (<anonymous>)
+    at promiseOrCallback (/home/prashant/Documents/node.js/node-framework/node_modules/mongoose/lib/helpers/promiseOrCallback.js:31:10)
+    at Mongoose._promiseOrCallback (/home/prashant/Documents/node.js/node-framework/node_modules/mongoose/lib/index.js:1150:10)
+2021-10-05 12:27:21 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/privilege.model.js
+2021-10-05 12:27:21 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/role.model.js
+2021-10-05 12:27:21 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/rolePrivilege.model.js
+2021-10-05 12:27:21 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/user.model.js
+2021-10-05 12:27:21 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/userRole.model.js
+2021-10-05 12:28:04 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/privilege.model.js
+2021-10-05 12:28:04 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/role.model.js
+2021-10-05 12:28:04 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/rolePrivilege.model.js
+2021-10-05 12:28:04 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/user.model.js
+2021-10-05 12:28:04 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/userRole.model.js
+2021-10-05 12:28:06 [32minfo[39m: =================================
+2021-10-05 12:28:06 [32minfo[39m: ======= ENV: development =======
+2021-10-05 12:28:06 [32minfo[39m: 🚀 App listening on the port 3000
+2021-10-05 12:28:06 [32minfo[39m: =================================
+2021-10-05 12:39:27 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/privilege.model.js
+2021-10-05 12:39:27 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/role.model.js
+2021-10-05 12:39:27 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/rolePrivilege.model.js
+2021-10-05 12:39:27 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/user.model.js
+2021-10-05 12:39:27 [32minfo[39m: Model :: /home/prashant/Documents/node.js/node-framework/database/models/internal-user/userRole.model.js
+2021-10-05 12:39:29 [32minfo[39m: =================================
+2021-10-05 12:39:29 [32minfo[39m: ======= ENV: development =======
+2021-10-05 12:39:29 [32minfo[39m: 🚀 App listening on the port 3000
+2021-10-05 12:39:29 [32minfo[39m: =================================
+2021-10-05 12:39:45 [32minfo[39m: DB connected

@@ -9,6 +9,7 @@ package-lock.json
 
 # dotenv environment variables file
 .env
+local.env
 
 # Logs
 logs/*

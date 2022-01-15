@@ -12,5 +12,5 @@ package-lock.json
 local.env
 
 # Logs
-logs/*
+src/logs/*
 npm-debug.log*

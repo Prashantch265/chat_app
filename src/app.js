@@ -5,13 +5,17 @@ const compression = require("compression");
 const cors = require("cors");
 const { corsOption } = require("./utils/cors");
 const hpp = require("hpp");
-const { stream, logger } = require("./utils/logger");
+const { logger } = require("./utils/logger");
 const morgan = require("morgan");
 const session = require("express-session");
 const { initKeycloak } = require("./lib/keycloak");
 const errorHandler = require("./middlewares/error.middleware");
-const sequelize = require("./lib/sequelize");
+// const sequelize = require("./lib/sequelize");
 const mongoose = require("./lib/mongo");
+const { errorResponse } = require("./utils/");
+const { errorMsg } = require("./utils/messages/message.json");
+const path = require("path");
+const winston = require("winston");
 
 const app = new express();
 
@@ -21,20 +25,19 @@ const memoryStore = new session.MemoryStore();
 
 if (process.env.NODE_ENV && process.env.NODE_ENV === "development") {
   app.use(cors({ origin: "*", credentials: true })); //before routes
-  app.use(morgan("dev", { stream }));
+  app.use(morgan("dev", { stream: winston.stream.write }));
 } else {
-  app.use(morgan("combined", { stream }));
+  app.use(morgan("combined", { stream: winston.stream.write }));
   app.use(cors(corsOption));
 }
 
 /**
  * for sequelize
  */
-sequelize
-  .sync({ force: true })
-  .then(() => logger.info("DB connected"))
-  .catch((err) => logger.error(err.stack));
-
+// sequelize
+//   .sync({ force: true })
+//   .then(() => logger.info("DB connected"))
+//   .catch((err) => logger.error(err.stack));
 
 /**
  * for mongoose
@@ -61,10 +64,17 @@ app.use(
 
 // app.use(keycloak.middleware({ logout: "/logout", admin: "/" }));
 
+app.set("viewengine", "ejs");
+app.use("/assets", express.static(path.join(__dirname, "/views/assets")));
+
+app.get("/", (req, res) => {
+  res.render("index.ejs");
+});
+
 app.use((req, res, next) => {
   const err = new Error();
-  err.status(404);
-  err.message("Not Found");
+  err.status = 404;
+  err.message = "Not Found";
   next(err);
 });
 
